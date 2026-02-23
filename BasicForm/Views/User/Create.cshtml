@@ -14,7 +14,7 @@
 <div>
   <form method="post">
         <div class="mb-3">
-            <label for="username" class="form-label">Username</label>
+            <label for="username" class="form-label">Institution Name:</label>
             <input type="text" class="form-control" id="username" aria-describedby="emailHelp" asp-for="Username"/>
         </div>
         
@@ -29,8 +29,20 @@
             <input type="password" class="form-control" id="exampleInputPassword1" asp-for="Password"/>
         </div>
         <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">I agree to terms and conditions</label>
+            <label class="form-label" for="total_stu">Present number of students</label>
+            <input type="number" class="form-check-input" id="total_stu">
+        </div>
+        <div class="mb-3 form-check">
+            <label class="form-label" for="total_tea">Present number of Teachers</label>
+            <input type="number" class="form-check-input" id="total_tea">
+        </div>
+        <div class="mb-3 form-check">
+            <label class="form-label" for="total_course">Total Courses you provide</label>
+            <input type="number" class="form-check-input" id="total_course">
+        </div>
+        <div class="mb-3 form-check">
+            <label class="form-label" for="total_exam">Total Exam your institution take</label>
+            <input type="number" class="form-check-input" id="total_exam">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
         
