@@ -28,3 +28,4 @@ D:\cSharpBasic\BasicForm\BasicForm\obj\Debug\net8.0\refint\BasicForm.dll
 D:\cSharpBasic\BasicForm\BasicForm\obj\Debug\net8.0\BasicForm.pdb
 D:\cSharpBasic\BasicForm\BasicForm\obj\Debug\net8.0\BasicForm.genruntimeconfig.cache
 D:\cSharpBasic\BasicForm\BasicForm\obj\Debug\net8.0\ref\BasicForm.dll
+D:\cSharpBasic\BasicForm\BasicForm\obj\Debug\net8.0\BasicForm.sourcelink.json
