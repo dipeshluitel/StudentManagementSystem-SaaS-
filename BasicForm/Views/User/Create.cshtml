@@ -1,0 +1,47 @@
+﻿@model BasicForm.Models.MyForm
+
+@* @{ *@
+@*     Layout = null; *@
+@* } *@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<body>
+<div>
+    <form asp-action="Create" method="post" class="form form-control" >
+        <div>
+            <label>First Name:</label>
+            <input asp-for="Fname"/>
+            <span asp-validation-for="Fname"></span>
+        </div>
+        
+        <div>
+            <label>Last Name:</label>
+            <input asp-for="Lname"/>
+            <span asp-validation-for="Lname"></span>
+        </div>
+        
+        <div>
+            <label>Email:</label>
+            <input asp-for="Email"/>
+            <span asp-validation-for="Email"></span>
+        </div>
+        
+        <div>
+            <label>Age:</label>
+            <input asp-for="Age"/>
+            <span asp-validation-for="Age"></span>
+        </div>
+        
+        <button type="submit">
+            <i class="fa-solid fa-check"></i>Submit
+        </button>
+        
+    </form>
+</div>
+</body>
+</html>
