@@ -5,16 +5,13 @@ namespace BasicForm.Models;
 public class MyForm
 {
     // [Required]
-    public String Fname { get; set; }
+    public String Username { get; set; }
     
     [Required]
-    public String Lname { get; set; }
+    public String Password { get; set; }
     
     [Required]
     [EmailAddress]
     public String Email { get; set; }
     
-    [Required]
-    [Range(0, 100)]
-    public int Age { get; set; }
 }

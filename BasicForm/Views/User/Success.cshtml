@@ -8,11 +8,91 @@
 </head>
 <body>
 <div>
-    <h2>Submission Successful!</h2>
-    <p>Name: @Model.Fname</p>
-    <p>Name: @Model.Lname</p>
-    <p>Email: @Model.Email</p>
-    <p>Age: @Model.Age</p>
+    <div class="container mt-4">
+    <div class="alert alert-success shadow-sm">
+        <h4 class="mb-0">Welcome, <strong>@Model.Username</strong></h4>
+        <small>Your account has been successfully created.</small>
+    </div>
+</div>
+    
+<div class="container mt-3">
+    <div class="row g-4">
+
+        <div class="col-md-3">
+            <div class="card text-white bg-primary shadow card-hover">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-people-fill"></i> Students</h5>
+                    <h2>250</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-white bg-success shadow card-hover">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-person-badge-fill"></i> Teachers</h5>
+                    <h2>35</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-white bg-warning shadow card-hover">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-book-fill"></i> Subjects</h5>
+                    <h2>18</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-white bg-danger shadow card-hover">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-calendar-event-fill"></i> Exams</h5>
+                    <h2>5</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Quick Actions -->
+<div class="container mt-5">
+    <h4 class="mb-3">Quick Actions</h4>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card shadow card-hover">
+                <div class="card-body text-center">
+                    <i class="bi bi-person-plus-fill fs-1 text-primary"></i>
+                    <h5 class="mt-3">Add Student</h5>
+                    <a href="#" class="btn btn-primary btn-sm mt-2">Manage</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow card-hover">
+                <div class="card-body text-center">
+                    <i class="bi bi-journal-plus fs-1 text-success"></i>
+                    <h5 class="mt-3">Create Subject</h5>
+                    <a href="#" class="btn btn-success btn-sm mt-2">Manage</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow card-hover">
+                <div class="card-body text-center">
+                    <i class="bi bi-file-earmark-bar-graph-fill fs-1 text-danger"></i>
+                    <h5 class="mt-3">View Results</h5>
+                    <a href="#" class="btn btn-danger btn-sm mt-2">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 </body>
 </html>

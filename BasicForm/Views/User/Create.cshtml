@@ -12,34 +12,27 @@
 </head>
 <body>
 <div>
-    <form asp-action="Create" method="post" class="form form-control" >
-        <div>
-            <label>First Name:</label>
-            <input asp-for="Fname"/>
-            <span asp-validation-for="Fname"></span>
+  <form method="post">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" aria-describedby="emailHelp" asp-for="Username"/>
         </div>
         
-        <div>
-            <label>Last Name:</label>
-            <input asp-for="Lname"/>
-            <span asp-validation-for="Lname"></span>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" asp-for="Email"/>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         
-        <div>
-            <label>Email:</label>
-            <input asp-for="Email"/>
-            <span asp-validation-for="Email"></span>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" asp-for="Password"/>
         </div>
-        
-        <div>
-            <label>Age:</label>
-            <input asp-for="Age"/>
-            <span asp-validation-for="Age"></span>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">I agree to terms and conditions</label>
         </div>
-        
-        <button type="submit">
-            <i class="fa-solid fa-check"></i>Submit
-        </button>
+        <button type="submit" class="btn btn-primary">Submit</button>
         
     </form>
 </div>
